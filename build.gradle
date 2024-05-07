@@ -21,6 +21,9 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	//h2
 	runtimeOnly 'com.h2database:h2'
+	//mysql
+	implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.0.33'
+	implementation 'mysql:mysql-connector-java'
 }
 
 tasks.named('test') {
