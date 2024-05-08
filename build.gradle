@@ -19,11 +19,19 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
 	//h2
 	runtimeOnly 'com.h2database:h2'
 	//mysql
 	implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.0.33'
-	implementation 'mysql:mysql-connector-java'
+//	implementation 'mysql:mysql-connector-java'
+	implementation 'com.mysql:mysql-connector-j'
+
+	// https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+	implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+
 }
 
 tasks.named('test') {

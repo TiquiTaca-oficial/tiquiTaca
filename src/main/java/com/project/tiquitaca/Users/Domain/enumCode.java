@@ -1,2 +1,5 @@
-package com.project.tiquitaca.Users.Domain;public class enumCode {
+package com.project.tiquitaca.Users.Domain;
+
+public enum enumCode {
+    USER, ADMIN
 }
